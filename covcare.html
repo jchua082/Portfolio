@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jing Yi's Portfolio Website</title>
+    <link rel="stylesheet" href="covcare.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Use the latest Bootstrap Ver5.2.2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <!--slick slider CSS links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- add aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Link for Favicon -->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<a name="top"></a>
+<body style="background-image: url('images/covcare/background.png');">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                <!-- <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i> -->
+            </nav>
+        </div>
+    </div>
+
+    <div id="covcare">
+        <div class="container">
+            <a href="portfolio.html" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><button
+                    type="submit" class="btn btn2"><i class="fas fa-angle-left"></i>&nbsp;
+                    Portfolio</button>
+            </a>
+
+            <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">CovCare</h1>
+            <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">WEB DEVELOPMENT, UX / UI DESIGN</p><br>
+            <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h3>Year:</h3>
+                <p>2022</p>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h3>Skills:</h3>
+                <p>HTML, CSS, JavaScript, Bootstrap, UX Design, Figma</p>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h3>Course Code:</h3>
+                <p>CS2024</p>
+            </div>
+            <a href="https://cov-care.netlify.app/index.html" target="_blank"><button type="submit" class="btn btn2"
+                    data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">View Final
+                    Website&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </a>
+
+            <!-- Image Carousel -->
+            <section id="banner" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/covcare/covcare-1.png" class="d-block w-100" alt="page 1">
+                            <!-- <div id="caption-bg-one" class="carousel-caption d-none d-md-block">
+                                <p>Homepage</p>
+                            </div> -->
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/covcare/covcare-2.png" class="d-block w-100" alt="page 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/covcare/covcare-3.png" class="d-block w-100" alt="page 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Project Scope -->
+            <div id="project-scope">
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-right" data-aos-delay="500" data-aos-duration="700"
+                        data-aos-once="true">
+                        <img src="images/covcare/project-scope.png" class="img-fluid" alt="Project Scope" />
+                    </div>
+                    <div class="col-md-8 my-auto our-team-text" data-aos="fade-left" data-aos-delay="200"
+                        data-aos-once="true">
+                        <h1>Project Scope</h1>
+                        <p>To develop a website for a fictional medical company that does PCR test in Singapore such
+                            that booking sales of PCR packages within the next 3 months by 20%.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Target Audience -->
+            <section id="target-audience" data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="500" data-aos-once="true">
+                <div class="card text-bg">
+                    <img src="images/covcare/target-audience.png" class="card-img" alt="Vision Image"
+                        style="border: none;">
+                    <!-- <div class="card-img-overlay"
+                        style="margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; text-align: center; background-color: aliceblue;">
+                        <h2>TARGET AUDIENCE</h2>
+                        <p>
+                            <span>Travellers who are looking for affordable, reliable, and convenient Pre-departure Testing Services</span>
+                        </p>
+                    </div> -->
+                </div>
+            </section>
+
+            <!-- User Research -->
+            <div id="user-research">
+                <div class="row">
+                    <div class="col-md-8 my-auto our-team-text" data-aos="fade-right" data-aos-delay="600"
+                        data-aos-duration="1500" data-aos-once="true">
+                        <h1>User Research</h1>
+                        <p>To understand our target audience better, my team and I created user personas to represent
+                            our target audience to analyse their behaviour patterns, goals, skills, attitudes, and
+                            background information.
+                            A customer journey map to visualise the user’s journey with the PCR services at all touch
+                            points such that we can increase customer retentions anf discover loopholes that needs to be
+                            improved.</p>
+                        <a href="https://www.figma.com/file/FhBSra7QKiyHRrVrTWMXcH/CS2024-Customer-Journey-Map?node-id=0%3A1&t=6SD5fVzYOVgGwrgt-1"
+                            target="_blank"><button type="submit" class="btn btn2">Customer Journey Map &nbsp;<i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                        <a href="https://www.figma.com/file/Jqu0u1o0utRFTclR0ib4V7/CS2024-User-Persona?node-id=0%3A1&t=kXNEVpfOGoJdqxr9-1"
+                            target="_blank"><button type="submit" class="btn btn2">User Persona &nbsp;<i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                    </div>
+                    <div class="col-md-4" style="text-align: right;" data-aos="fade-left" data-aos-delay="600"
+                    data-aos-duration="1500" data-aos-once="true">
+                        <img src="images/covcare/user-research.png" class="img-fluid" alt="" title="" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Designing Process -->
+            <div id="designing-process">
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <img src="images/covcare/designing.png" class="img-fluid" alt="" title="" />
+                    </div>
+                    <div class="col-md-8 my-auto our-team-text" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <h1>Designing Process</h1>
+                        <p>After conducting user research, we then kickstart the designing of the website using Figma.
+                            After deciding all the various web pages that we would create, we then designed low-fidelity
+                            prototypes of the various layouts. We then proceeded to finalise the theme and fonts to be
+                            used to best suit our clients’ brand image and achieve the objectives or increasing PCR
+                            sales.
+                            <br><br>
+                            After reiterating the refinement process, we finally created our high-fidelity prototypes on
+                            Figma.
+                        </p>
+                        <a href="https://www.figma.com/file/mZDMoHX1VFbNXyw8B9zzqk/CS2024-Final-Project?node-id=34%3A3&t=q8Q40WG9YbtyDz8N-1"
+                            target="_blank"><button type="submit" class="btn btn2">View on Figma &nbsp;<i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copywriting -->
+            <div id="copywriting">
+                <div class="row">
+                    <div class="col-md-8 my-auto our-team-text" data-aos="fade-right" data-aos-delay="300"
+                        data-aos-duration="1500" data-aos-once="true">
+                        <h1>Copywriting</h1>
+                        <p>To help CovCare achieve their goals of increasing booking sales, persuasive copywriting
+                            skills were used. Our team brainstormed promotions placed in our promotional banners that
+                            will help entice new customers and retain our existing customers. Statistics and social
+                            proof are also seen on the website to increase the company’s reputability and professional
+                            credibility.
+                            <br>
+                            For more details on our copywriting, view our powerpoint pitch here:
+                        </p>
+                        <a href="https://docs.google.com/presentation/d/1n_ctSuMh3HkSjLr-z-uUt3gZeJMpx74X2XerNblOBhM/edit?usp=sharing"
+                            target="_blank"><button type="submit" class="btn btn2">View PowerPoint &nbsp;<i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></i></button></a>
+                    </div>
+                    <div class="col-md-4" style="text-align: right;" data-aos="fade-left" data-aos-delay="300"
+                    data-aos-duration="1500" data-aos-once="true">
+                        <img src="images/covcare/copywriting.png" class="img-fluid" alt="Copywriting"
+                            title="Copywriting" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development Process -->
+            <div id="development-process">
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-right" data-aos-delay="700"
+                    data-aos-duration="1500" data-aos-once="true">
+                        <img src="images/covcare/web-development.png" class="img-fluid" alt="CovCare's CEO"
+                            title="CovCare's CEO - Dr. Jane Lim" />
+                    </div>
+                    <div class="col-md-8 my-auto our-team-text" data-aos="fade-right" data-aos-delay="700"
+                        data-aos-duration="1500" data-aos-once="true">
+                        <h1>Web Development Process</h1>
+                        <p>We then began to code the website utilising our HTML, CSS, and Bootstrap skills that we
+                            learned in class. We split our workload equally and each member was tasked to code out 3 of
+                            the webpages each. To refine our webpages even further, we gathered feedback from our
+                            professor and added animations and responsiveness to our site. A chatbot was also included
+                            using JavaScript which prevents customers from waiting to receive responses and enhances the
+                            user experience. After reiterating the designing, copywriting, and coding process, I am
+                            proud to present to you our final product of this project.</p>
+                        <a href="https://github.com/jchua082/CovCare" target="_blank"><button type="submit"
+                                class="btn btn2">View Github &nbsp;<i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final -->
+            <div id="final">
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <h1>Final Project</h1>
+                        <p><i class="fa-brands fa-github"></i><a href="https://github.com/jchua082/CovCare"
+                                target="_blank"
+                                style="text-decoration: none; color: black; cursor: pointer;">&nbsp;&nbsp;Github</a></p>
+                        <p><i class="fa-brands fa-figma"></i><a
+                                href="https://www.figma.com/file/mZDMoHX1VFbNXyw8B9zzqk/CS2024-Final-Project?node-id=34%3A3&t=q8Q40WG9YbtyDz8N-1"
+                                target="_blank"
+                                style="text-decoration: none; color: black; cursor: pointer;">&nbsp;&nbsp;Figma</a></p>
+                        <p><i class="fa-solid fa-file-powerpoint"></i><a
+                                href="https://docs.google.com/presentation/d/1n_ctSuMh3HkSjLr-z-uUt3gZeJMpx74X2XerNblOBhM/edit?usp=sharing"
+                                target="_blank"
+                                style="text-decoration: none; color: black; cursor: pointer;">&nbsp;&nbsp;PowerPoint
+                                Pitch</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="next-project" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1500"
+                data-aos-once="true">
+                <a href="sgmoneylender.html" style="text-decoration: none; color:black;">
+                    <p>NEXT PROJECT <i class="fa-solid fa-chevron-right"></i></p>
+                    <h1>SG Money Lender</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Top -->
+    <a href="#top">
+        <i class="fa-solid fa-caret-up scrolltop"></i>
+    </a>
+
+    <!-- Footer -->
+    <div id="contact">
+        <div class="copyright">
+            <p>Copyright &copy; Chua Jing Yi.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- aos javascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

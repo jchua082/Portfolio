@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jing Yi's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- add aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Link for Favicon -->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<a name="top"></a>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
+            <p>Hi, I'm</p>
+            <h1>Chua Jing Yi</h1>
+            <h2>Final Year Student at Nanyang Technological University</h2>
+        </div>
+    </div>
+</div>
+<!-- About -->
+<div id="about" name="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1" data-aos="fade-right" data-aos-delay="200" data-aos-duration="700"
+            data-aos-once="true">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2" data-aos="fade-left" data-aos-delay="200"
+            data-aos-once="true">
+                <h1 class="subtitle">About Me</h1>
+                <p>Hello! I am Jing Yi and I am a final year engineering undergraduate from the School of Electrical and Electronic Engineering at Nanyang Technological University (NTU) majoring in Information Engineering and Media. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>Proficient in English and Chinese (Mandarin)</li>
+                        <li><span>Software Programming</span><br>HTML5, CSS3, JavaScript, SQL, PHP, C Language, Object-Oriented Programming</li>
+                        <li><span>Software Applications</span><br>Figma, Bootstrap, Procreate, Photoshop, Autodesk Inventor, React Native, Flutter, Android Studio, Unity, Microsoft Office, Canva, Miro</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Web UX Analyst Intern, Accenture</span>
+                            <br>
+                            •	Analysed existing web/mobile applications and conducted surveys and interviews to identify areas where UX can be improved 
+                            <br>
+                            •	Collaborated with different stakeholders about the technical challenges and constraints posted to the team
+                            <br>
+                            •	Utilised Figma and Miro to construct user flows, wireframes, and 3 high-fidelity prototypes in the redesigning process using UX Design
+                            <br>
+                            •	Proposed and implemented innovative solutions to the various stakeholders using the prototypes created to resolve issues identified on the existing portal
+                        </li>
+                        <br>
+                        <li><span>Project Engineer Intern, Innowave Tech Pte. Ltd.</span>
+                            <br>
+                            •	Performed site-specific engineering analysis with the Operations Team and strategizing design and process changes to improve the efficiency of the project
+                            <br>
+                            •	Liaised with the Data Science Team and Operations Team to monitor and maintain project progress through daily meetings and data analysis
+                            <br>
+                            •	Prepared project analysis reports and cost estimations using Microsoft Excel to mitigate risks and maximise profit
+                            <br>
+                            •	Successfully improved the reliability and accuracy of image recognition algorithm by 32% in 2 months
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Nanyang Technological University (NTU)</span>
+                            <br>
+                            •	Aug 2019 – Jun 2023 (Expected)
+                            <br>
+                            •	School of Electrical and Electronic Engineering
+                            <br>
+                            •	Bachelor of Engineering, Honours (Information Engineering and Media)
+                            <br>
+                            •	<strong><u>Honours (Merit)</u>&nbsp;(Expected)</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- My Work -->
+<div id="portfolio">
+    <div class="container" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>UX / UI Design</h3>
+                    <p></p>
+                    <a href="portfolio.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Web Development</h3>
+                    <p></p>
+                    <a href="portfolio.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png" alt="Mobile Development">
+                <div class="layer">
+                    <h3>Mobile Development</h3>
+                    <p></p>
+                    <a href="portfolio.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="portfolio.html" class="btn">See More</a>
+    </div>
+</div>
+
+<div id="testimonial" name="testimonial" data-aos="zoom-in-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+    <div class="container">
+        <h1 class="subtitle">Testimonial</h1><br>
+        <iframe src="testimonial/Accenture_Testimonial_Intern - Chua JingYi.pdf" width="100%" height="920px" style="margin-left: auto; margin-right:auto; text-align: center;"></iframe>
+    </div>
+</div>
+
+<!-- Contact -->
+<div id="contact" name="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left" data-aos="fade-right" data-aos-offset="300" data-aos-delay="200" data-aos-easing="ease-in-sine">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fas fa-mail-bulk"></i><a href="mailto:jchua082@e.ntu.edu.sg" style="text-decoration: none; color: black; cursor: pointer;">jchua082@e.ntu.edu.sg</a></p>
+                <p><i class="fas fa-phone"></i><a href="tel:98605439" style="text-decoration: none; color: black; cursor: pointer;">+65 9860 5439</a></p>
+                <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/jing-yi-chua/" target="_blank" style="text-decoration: none; color: black; cursor: pointer;">Jing Yi Chua</a></p>
+                <a href="images/Chua Jing Yi Resume 2023.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right" data-aos="fade-left" data-aos-offset="300" data-aos-delay="200" data-aos-easing="ease-in-sine">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Scroll Top -->
+    <a href="#top">
+        <i class="fa-solid fa-caret-up scrolltop"></i>
+    </a>
+    <div class="copyright">
+        <p>Copyright &copy; Chua Jing Yi.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwfV3P-rM9TKORTmfXRdpYrSirsfXGKNt6FUpB2UMQiBX6KJKslnI2Zy4sG1btkbGFbAw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<!-- aos javascript -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+
+</html>

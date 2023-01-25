@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jing Yi's Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Use the latest Bootstrap Ver5.2.2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- add aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link for Favicon -->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+
+<a name="top"></a>
+<body style="background-image: url('images/portfolio/background.png');">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                <!-- <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i> -->
+            </nav>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Portfolio</h1>
+            <div class="tab-titles" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <p class="tab-links active-link" onclick="opentab('all')">All</p>
+                <p class="tab-links" onclick="opentab('ux_design')">UX / UI Design</p>
+                <p class="tab-links" onclick="opentab('web-development')">Web Development</p>
+                <p class="tab-links" onclick="opentab('mobile-development')">Mobile Development</p>
+                <p class="tab-links" onclick="opentab('others')">Others</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="all">
+                <!-- cards -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- CovCare -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/covcare-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN, WEB DEVELOPMENT</p>
+                                <h2 class="card-title">CovCare</h2>
+                                <p class="card-text">A website for a fictitious PCR Testing medical Company, CovCare.
+                                </p>
+                                <a href="covcare.html" target="_blank" class="btn btn-primary"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SG Money Lender -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/sg-moneylender-card.png"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN, WEB DEVELOPMENT</p>
+                                <h2 class="card-title">SG MoneyLender</h2>
+                                <p class="card-text">A website for a fictitious licensed moneylending company, SG
+                                    MoneyLender.</p>
+                                <a href="sgmoneylender.html" class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BusMeet App -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/busmeet-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN, MOBILE DEVELOPMENT</p>
+                                <h2 class="card-title">BusMeet App</h2>
+                                <p class="card-text">A mobile app where users can check bus information while
+                                    interacting with other users seamlessly.</p>
+                                <a href="busmeet.html" class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redesigning the NTU Portal -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="230" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/ntu-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN</p>
+                                <h2 class="card-title">Redesigning the NTU Portal</h2>
+                                <p class="card-text">A revamp of the current NTU Portal for a better user experience.
+                                </p>
+                                <a href="ntu.html" class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shopee Design Challenge -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="230" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/shopee-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN</p>
+                                <h2 class="card-title">Shopee Design Challenge</h2>
+                                <p class="card-text">To strengthen ShopeePay Near Me’s positioning through a new
+                                    interface.</p>
+                                <a href="shopee.html" class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sewing -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="230" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/sewing-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">OTHERS</p>
+                                <h2 class="card-title">Fashion & Design</h2>
+                                <p class="card-text">Creating wearable art works as a second skin.</p>
+                                <a href="https://docs.google.com/presentation/d/1gjYS257iYEX6O4TMUnYV6UzowJrgMmzS2MzWGMthO6Q/edit?usp=sharing"
+                                    class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-contents" id="ux_design">
+                <!-- cards -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- CovCare -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/covcare-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN, WEB DEVELOPMENT</p>
+                                <h2 class="card-title">CovCare</h2>
+                                <p class="card-text">A website for a fictitious PCR Testing medical Company, CovCare.
+                                </p>
+                                <a href="covcare.html" target="_blank" class="btn btn-primary"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SG Money Lender -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/sg-moneylender-card.png"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN, WEB DEVELOPMENT</p>
+                                <h2 class="card-title">SG MoneyLender</h2>
+                                <p class="card-text">A website for a fictitious licensed moneylending company, SG
+                                    MoneyLender.</p>
+                                <a href="sgmoneylender.html" class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BusMeet App -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/busmeet-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN, MOBILE DEVELOPMENT</p>
+                                <h2 class="card-title">BusMeet App</h2>
+                                <p class="card-text">A mobile app where users can check bus information while
+                                    interacting with other users seamlessly.</p>
+                                <a href="busmeet.html" class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redesigning the NTU Portal -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="230" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/ntu-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN</p>
+                                <h2 class="card-title">Redesigning the NTU Portal</h2>
+                                <p class="card-text">A revamp of the current NTU Portal for a better user experience.
+                                </p>
+                                <a href="ntu.html" class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shopee Design Challenge -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="230" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/shopee-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN</p>
+                                <h2 class="card-title">Shopee Design Challenge</h2>
+                                <p class="card-text">To strengthen ShopeePay Near Me’s positioning through a new
+                                    interface.</p>
+                                <a href="shopee.html" class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PB&J -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="230" data-aos-duration="1500"
+                    data-aos-once="true">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-contents" id="web-development">
+                <!-- cards -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- CovCare -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/covcare-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN, WEB DEVELOPMENT</p>
+                                <h2 class="card-title">CovCare</h2>
+                                <p class="card-text">A website for a fictitious PCR Testing medical Company, CovCare.
+                                </p>
+                                <a href="covcare.html" target="_blank" class="btn btn-primary"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SG Money Lender -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/sg-moneylender-card.png"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN, WEB DEVELOPMENT</p>
+                                <h2 class="card-title">SG MoneyLender</h2>
+                                <p class="card-text">A website for a fictitious licensed moneylending company, SG
+                                    MoneyLender.</p>
+                                <a href="sgmoneylender.html" class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PB&J -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <!-- <div class="card">
+                            <img class="card-img-top" src="images/portfolio/pb&j-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN, WEB DEVELOPMENT</p>
+                                <h2 class="card-title">PB&J</h2>
+                                <p class="card-text">A website for a fictitious women’s fashion company, PB&J.</p>
+                                <a href="pb&j.html" class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="tab-contents" id="mobile-development">
+                <!-- cards -->
+                <div class="row row-cols-1 row-cols-md-3 g-4" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="1500" data-aos-once="true">
+                    <!-- BusMeet App -->
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/busmeet-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">UI/UX DESIGN, MOBILE DEVELOPMENT</p>
+                                <h2 class="card-title">BusMeet App</h2>
+                                <p class="card-text">A mobile app where users can check bus information while
+                                    interacting with other users seamlessly.</p>
+                                <a href="busmeet.html" class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-contents" id="others">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Sewing -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="230" data-aos-duration="1500"
+                        data-aos-once="true">
+                        <div class="card">
+                            <img class="card-img-top" src="images/portfolio/sewing-card.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="small-font">OTHERS</p>
+                                <h2 class="card-title">Fashion & Design</h2>
+                                <p class="card-text">Creating wearable art works as a second skin.</p>
+                                <a href="https://docs.google.com/presentation/d/1gjYS257iYEX6O4TMUnYV6UzowJrgMmzS2MzWGMthO6Q/edit?usp=sharing"
+                                    class="btn btn-primary" target="_blank"
+                                    style="margin-top: 5px; margin-bottom: 5px;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Scroll Top -->
+    <a href="#top">
+        <i class="fa-solid fa-caret-up scrolltop"></i>
+    </a>
+
+    <!-- Footer -->
+    <div id="contact">
+        <div class="copyright">
+            <p>Copyright &copy; Chua Jing Yi.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- aos javascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
