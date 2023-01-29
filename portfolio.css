@@ -10,7 +10,7 @@ body {
     color: #000000;
 }
 
-.container {
+.container{
     padding: 10px 10%;
 }
 
@@ -380,10 +380,11 @@ font-size: 24px;
 }
 
 .small-font{
+    margin-top: 10px;
     font-family: 'Poppins', 'sans-serif';
     font-style: normal;
-    font-weight: 400;
-font-size: 12px;
+    font-weight: 600;
+font-size: 14px;
 }
 
 /* ScrollTop */

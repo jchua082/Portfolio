@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #f1ede5;
+    background-image: url(images/wallpaper.png);
     color: #000000;
 }
 
@@ -69,7 +69,8 @@ nav ul li a:hover::after{
 }
 
 .header-text h1{
-    font-size: 60px;
+    font-family: 'Caveat';
+    font-size: 96px;
     margin-top: 20px;
     color: #29a587;
 }
@@ -206,6 +207,7 @@ nav ul li a:hover::after{
     font-weight: 500;
     margin-bottom: 20px;
     color: white;
+    font-size: 24px;
 }
 
 .layer a{
@@ -237,7 +239,7 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    background-color: #F5F3F0;
+    background-color: #29a587;
     /* background-color: #ababab;
     color: #080808; */
     color: #000000;
@@ -245,7 +247,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
-    background: #29a587;
+    background: #F5F3F0;
 }
 
 /* Testimonial */
@@ -276,6 +278,10 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
     background: #29a587;
+}
+
+.btn2:hover{
+    background: #F5F3F0;
 }
 .contact-right form{
     width: 100%;
