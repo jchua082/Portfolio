@@ -6,8 +6,9 @@
 }
 
 body {
-    background-color: #f1ede5;
+    /* background-color: #f1ede5; */
     color: #000000;
+    background-image: url('images/covcare/background.png');
 }
 
 .container {
@@ -257,6 +258,10 @@ nav ul li a:hover::after {
     background: #29a587;
 }
 
+.btn.btn2:hover a{
+    color: #29a587;
+    }
+
 .contact-right form {
     width: 100%;
 }
@@ -368,38 +373,38 @@ font-size: 24px;
 }
 
 #project-scope{
-    margin-top: 45px;
-    margin-bottom: 45px;
+    margin-top: 65px;
+    margin-bottom: 65px;
 }
 
 #target-audience{
-    margin-top: 45px;
-    margin-bottom: 45px;
+  margin-top: 65px;
+  margin-bottom: 65px;
 }
 
 #user-research{
-    margin-top: 45px;
-    margin-bottom: 45px;  
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 #designing-process{
-    margin-top: 45px;
-    margin-bottom: 45px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 #copywriting{
-    margin-top: 45px;
-    margin-bottom: 45px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 #development-process{
-    margin-top: 45px;
-    margin-bottom: 45px;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
 
 #final{
-    margin-top: 45px;
-    margin-bottom: 45px;
+  margin-top: 5px;
+  margin-bottom: 75px;
 }
 
 .card-img-overlay {
@@ -428,3 +433,64 @@ font-size: 24px;
     border-radius: 40px;
     margin: 15px;
   }
+
+  .btn3{
+    width: fit-content;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 40px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #080808;
+    transition: background 0.5s;
+    float: left;
+  }
+
+  .btn3 a{
+      text-decoration: none;
+      color: #080808;
+  }
+
+  .btn3:hover {
+    background: #29a587;
+}
+
+.btn3:hover a{
+color: white;
+}
+
+.back {
+    background: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: #080808;
+    height: 45px;
+    width: 45px;
+    border-radius: 40px;
+    border: 2px solid #000000;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 7.5px;
+    transition: background 0.5s;
+  }
+
+.back:hover {
+  background: #29a587;
+}
+
+.hover i:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url('images/covcare-phone-background.png');
+    }
+}

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jing Yi's Portfolio Website</title>
-    <link rel="stylesheet" href="covcare.css">
+    <link rel="stylesheet" href="busmeet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -27,16 +27,17 @@
     <!-- add aos -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <!-- Link for Favicon -->
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <!-- Google Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <!-- Link for Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 </head>
 
 <a name="top"></a>
-<body style="background-image: url('images/busmeet/background.png');">
+
+<body>
     <div id="header">
         <div class="container">
             <nav>
@@ -56,32 +57,46 @@
 
     <div id="covcare">
         <div class="container">
-            <a href="portfolio.html" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><button
+            <!-- <a href="portfolio.html" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><button
                     type="submit" class="btn btn2"><i class="fas fa-angle-left"></i>&nbsp;
                     Portfolio</button>
-            </a>
+            </a> -->
+            <div class="hover">
+                <a href="portfolio.html"><i class="fas fa-angle-left back"></i></a>
+            </div>
+            <h1 class="subtitle" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">BusMeet</h1>
 
-            <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">BusMeet</h1>
             <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">MOBILE DEVELOPMENT, UX / UI
                 DESIGN</p>
 
-            <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <h3>Year:</h3>
-                <p>2021</p>
-            </div>
-            <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <h3>Skills:</h3>
-                <p>React Native, JavaScript, UX Design, Figma</p>
-            </div>
-            <a href="https://www.figma.com/proto/burrFTjgfZm4VKm99SDVvF/BusLeh-APP?page-id=85%3A2&node-id=396%3A3774&viewport=424%2C313%2C0.02&scaling=scale-down&starting-point-node-id=396%3A3774&show-proto-sidebar=1"
+            <table style="width:100%" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <tr>
+                    <th>
+                        <h3>Year:</h3>
+                    </th>
+                    <th>
+                        <h3>Skills:</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>React Native, JavaScript, UX Design, Figma, Agile Software Development</td>
+                </tr>
+            </table>
+
+            <!-- <a href="https://www.figma.com/proto/burrFTjgfZm4VKm99SDVvF/BusLeh-APP?page-id=85%3A2&node-id=396%3A3774&viewport=424%2C313%2C0.02&scaling=scale-down&starting-point-node-id=396%3A3774&show-proto-sidebar=1"
                 target="_blank"><button data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
                     type="submit" class="btn btn2">View Prototype&nbsp;<i
                         class="fa-solid fa-arrow-up-right-from-square"></i></button>
-            </a>
+            </a> -->
+
+            <button class="btn3" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><a
+                    href="https://www.figma.com/proto/burrFTjgfZm4VKm99SDVvF/BusLeh-APP?page-id=85%3A2&node-id=396%3A3774&viewport=424%2C313%2C0.02&scaling=scale-down&starting-point-node-id=396%3A3774&show-proto-sidebar=1"
+                    target="_blank">View Prototype&nbsp;&nbsp;<i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
 
             <!-- Image Carousel -->
-            <section id="banner" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500"
-            data-aos-once="true">
+            <section id="banner" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -104,7 +119,7 @@
                         data-aos-duration="500" data-aos-once="true">
                         <h1>Project Scope</h1>
                         <p>To create an integrated application where users can check bus information while interacting
-                            with other users, such as messaging, location sharing, and sharing their estimated time of
+                            with other users, such as messaging and sharing their location and estimated time of
                             arrival (ETA) seamlessly.</p>
                     </div>
                 </div>
@@ -126,17 +141,16 @@
                         data-aos-duration="1500" data-aos-once="true">
                         <h1>Introduction</h1>
                         <p>As users of the SG BusLeh App, our team found it tedious to navigate between the bus app and
-                            updating your current location and ETA when meeting up with someone.
+                            updating your current location and ETA when meeting up with someone. After conducting surveys and interviews with our target audience, 
+                            we quickly realised that our surveyees had the same sentiments and would love to include more features to the current app to streamline the current user flow.
                             <br><br>
                             Thus, this served as an inspiration for our mobile application, BusMeet, to create an
                             integrated app with all the necessary functions to meet up when travelling via public
-                            transport.
+                            transport to address our users' needs.
                         </p>
-                        <!-- <a href="https://www.figma.com/file/Jqu0u1o0utRFTclR0ib4V7/CS2024-User-Persona?node-id=0%3A1&t=kXNEVpfOGoJdqxr9-1" target="_blank"><button type="submit" class="btn btn2">User Persona &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button></a> -->
                     </div>
                     <div class="col-md-4" style="text-align: right;" data-aos="fade-left" data-aos-delay="600"
-                    data-aos-duration="1500" data-aos-once="true"
-                        data-aos-duration="1500">
+                        data-aos-duration="1500" data-aos-once="true" data-aos-duration="1500">
                         <img src="images/busmeet/introduction.png" class="img-fluid" alt="" title="" />
                     </div>
                 </div>
@@ -151,16 +165,25 @@
                     </div>
                     <div class="col-md-8 my-auto our-team-text" data-aos="fade-left" data-aos-delay="900"
                         data-aos-duration="1500" data-aos-once="true">
-                        <h1>Designing Mockups</h1>
-                        <p>Our team utilised Figma to create prototypes of the BusMeet App. We decided to create assets
-                            with the school theme in mind.
+                        <h1>Ideation & Design</h1>
+                        <p>From our user research, our team identified 3 new features to solve our users’ pain points:
                             <br><br>
-                            We also created avatar designs where users can customise their profile image, making this
-                            app more interactive.
+                            1. Create meet-up events where users can set up time and location to meet up with other users
+                            <br>
+                            2. View users’ ETA based on the location sharing feature
+                            <br>
+                            3. Create group chats to communicate with other users without switching apps
+                            <br><br>
+                            Our team then proceeded to come up with new user flows, sitemap, wireframes, assets, avatars, and prototypes utilising Figma. Prototypes are continuously refined after user testing, further streamlining user flows.
                         </p>
-                        <a href="https://www.figma.com/file/aaMbBTRxyAPSu597C1Wbou/The-Shopee-rior-Team?node-id=0%3A1&t=x5DG0WDIUNO4AFzq-1"
+                        <!-- <a href="https://www.figma.com/file/aaMbBTRxyAPSu597C1Wbou/The-Shopee-rior-Team?node-id=0%3A1&t=x5DG0WDIUNO4AFzq-1"
                             target="_blank"><button type="submit" class="btn btn2">Prototypes &nbsp;<i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></i></button></a>
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></i></button></a> -->
+
+                        <button class="btn3" style="margin-top: 0;"><a
+                                href="https://www.figma.com/proto/burrFTjgfZm4VKm99SDVvF/BusLeh-APP?page-id=85%3A2&node-id=396%3A3774&viewport=424%2C313%2C0.02&scaling=scale-down&starting-point-node-id=396%3A3774&show-proto-sidebar=1"
+                                target="_blank">View on Figma&nbsp;&nbsp;<i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
                     </div>
                 </div>
             </div>
@@ -168,15 +191,23 @@
             <!-- App Development -->
             <div id="copywriting">
                 <div class="row">
-                    <div class="col-md-8 my-auto our-team-text" data-aos="fade-right" data-aos-delay="1000"
+                    <div class="col-md-8 my-auto our-team-text" data-aos="fade-right" data-aos-delay="900"
                         data-aos-duration="1500" data-aos-once="true">
                         <h1>App Development</h1>
                         <p>
-                            We utilised the Expo framework using React Native for our application development and Amazon Web Services (AWS) Amplify to set up the backend infrastructure of our application.
+                            Once our final prototype was finalised, we then proceeded to begin our app development process.
+                            <br><br>
+                            We utilised the Expo framework using React Native for our application development and Amazon
+                            Web Services (AWS) Amplify to set up the backend infrastructure of our application.
+                            <br><br>
+                            Enhancements for the app are continuously made after gathering more feedback from our interviewees and weekly consults with our professor.
                         </p>
-                        <a href="https://github.com/lisllin99/IEM-DIP-G4" target="_blank"><button type="submit"
+                        <!-- <a href="https://github.com/lisllin99/IEM-DIP-G4" target="_blank"><button type="submit"
                                 class="btn btn2">Github &nbsp;<i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></i></button></a>
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></i></button></a> -->
+                        <button class="btn3"><a href="https://github.com/lisllin99/IEM-DIP-G4"
+                                target="_blank">Github&nbsp;&nbsp;<i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
                     </div>
                     <div class="col-md-4" style="text-align: right;" data-aos="fade-left" data-aos-once="true">
                         <img src="images/busmeet/app-development.png" class="img-fluid" alt="Copywriting"
@@ -188,7 +219,7 @@
             <!-- Final Product -->
             <div id="final">
                 <div class="row">
-                    <div class="col-md-6" data-aos="fade-right" data-aos-delay="1300" data-aos-duration="1500"
+                    <div class="col-md-12" data-aos="fade-right" data-aos-delay="1300" data-aos-duration="900"
                         data-aos-once="true">
                         <h1>Final Product</h1>
                         <br>
@@ -199,11 +230,14 @@
                                 href="https://www.figma.com/proto/burrFTjgfZm4VKm99SDVvF/BusLeh-APP?page-id=85%3A2&node-id=396%3A3774&viewport=424%2C313%2C0.02&scaling=scale-down&starting-point-node-id=396%3A3774&show-proto-sidebar=1"
                                 target="_blank"
                                 style="text-decoration: none; color: black; cursor: pointer;">&nbsp;&nbsp;Figma</a></p>
+                        <br>
+                        <h3>Team Members:</h3>
+                        <p>Chua Jing Yi, Melville Huang, Lim Li Swen, Teng Say Gek, Serena Soo, Ho Jia Jun, Lee Yi Xuan, Jin Zhao, Koh Yan Qin, Loh Jeng</p>
                     </div>
                 </div>
             </div>
 
-            <div id="next-project" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1500"
+            <div id="next-project" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="900"
                 data-aos-once="true">
                 <a href="ntu.html" style="text-decoration: none; color:black;">
                     <p>NEXT PROJECT <i class="fa-solid fa-chevron-right"></i></p>

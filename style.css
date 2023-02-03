@@ -84,7 +84,8 @@ nav ul li a:hover::after{
 /* About */
 #about{
     padding: 80px 0px;
-    color: #ababab;
+    /* color: #4f4f4e */
+ color: #747372;
 }
 
 .row{
@@ -242,12 +243,13 @@ nav ul li a:hover::after{
     background-color: #29a587;
     /* background-color: #ababab;
     color: #080808; */
-    color: #000000;
+    color: #FFFFFF;
     transition: background 0.5s;
 }
 
 .btn:hover{
     background: #F5F3F0;
+    color: #000000;
 }
 
 /* Testimonial */
@@ -282,6 +284,7 @@ nav ul li a:hover::after{
 
 .btn2:hover{
     background: #F5F3F0;
+    color: #000000;
 }
 .contact-right form{
     width: 100%;
@@ -371,6 +374,9 @@ nav .fas{
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+    #testimonial iframe{
+        height: 350px;
     }
 }
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jing Yi's Portfolio Website</title>
-    <link rel="stylesheet" href="covcare.css">
+    <link rel="stylesheet" href="ntu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -31,7 +31,7 @@
 </head>
 
 <a name="top"></a>
-<body style="background-image: url('images/ntu/background.png');">
+<body>
     <div id="header">
         <div class="container">
             <nav>
@@ -51,29 +51,34 @@
 
     <div id="covcare">
         <div class="container">
-            <a href="portfolio.html" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><button type="submit" class="btn btn2"><i class="fas fa-angle-left"></i>&nbsp; Portfolio</button>
-            </a>
-
-            <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Redesigning the NTU Portal</h1>
+            <!-- <a href="portfolio.html" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><button type="submit" class="btn btn2"><i class="fas fa-angle-left"></i>&nbsp; Portfolio</button>
+            </a> -->
+            <div class="hover">
+                <a href="portfolio.html"><i class="fas fa-angle-left back"></i></a>
+            </div>
+            <h1 class="subtitle" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Redesigning the NTU Portal</h1>
             <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">UX / UI DESIGN</p>
-            <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <h3>Year:</h3>
-                <p>2020</p>
-            </div>
-            <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <h3>Skills:</h3>
-                <p>UX Design, Figma</p>
-            </div>
-            <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <h3>Course Code:</h3>
-                <p>DV2008</p>
-            </div>
-            <a href="https://www.figma.com/proto/bhcdkeaMeuheBqSUch39cf/DV2008-Assignment-3?page-id=0%3A1&node-id=270%3A1&viewport=409%2C199%2C0.05&scaling=min-zoom&starting-point-node-id=270%3A1&show-proto-sidebar=1" target="_blank"><button type="submit" class="btn btn2" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">View Prototype&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-            </a>
+
+            <table style="width:100%" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <tr>
+                    <th><h3>Year:</h3></th>
+                    <th><h3>Skills:</h3></th>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>UX Design, Figma</td>
+                </tr>
+            </table>
+
+            <!-- <a href="https://www.figma.com/proto/bhcdkeaMeuheBqSUch39cf/DV2008-Assignment-3?page-id=0%3A1&node-id=270%3A1&viewport=409%2C199%2C0.05&scaling=min-zoom&starting-point-node-id=270%3A1&show-proto-sidebar=1" target="_blank"><button type="submit" class="btn btn2" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">View Prototype&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </a> -->
+            <button class="btn3" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><a
+                href="https://www.figma.com/proto/bhcdkeaMeuheBqSUch39cf/DV2008-Assignment-3?page-id=0%3A1&node-id=270%3A1&viewport=409%2C199%2C0.05&scaling=min-zoom&starting-point-node-id=270%3A1&show-proto-sidebar=1"
+                target="_blank">View Prototype&nbsp;&nbsp;<i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
 
             <!-- Image Carousel -->
-            <!-- <section id="banner"data-aos="zoom-in" data-aos-delay="300" data-aos-duration="700" data-aos-once="true">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -122,13 +127,6 @@
             <section id="target-audience" data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="500" data-aos-once="true">
                 <div class="card text-bg">
                     <img src="images/ntu/target-audience.png" class="card-img" alt="Vision Image" style="border: none;">
-                    <!-- <div class="card-img-overlay"
-                        style="margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; text-align: center; background-color: aliceblue;">
-                        <h2>TARGET AUDIENCE</h2>
-                        <p>
-                            <span>Travellers who are looking for affordable, reliable, and convenient Pre-departure Testing Services</span>
-                        </p>
-                    </div> -->
                 </div>
             </section>
 
@@ -161,13 +159,19 @@
                         <h1>User Research</h1>
                         <p>Our team conducted a survey with 30 NTU students to find out about our their needs and pain points using the NTU portal.
                             <br><br>
-                            We first gathered the most popular and common type of resources NTU students use on the regular. 
-                            <br><br>
-                            We find out their user journey to access and engage their academic resources.
-                            <br><br>
-                            Last but not least, we also gathered factors of the interface that users value, satisfactions levels, and their pain points using the current NTU portal.
-                        </p>                    
-                        <a href="https://docs.google.com/presentation/d/1mugF9Ym-6JrFcamcR4VabUjakRYz1rWV64dTIb_A-d4/edit?usp=sharing" target="_blank"><button type="submit" class="btn btn2">View PowerPoint &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></i></button></a>
+                            We first gathered the most popular and common type of resources NTU students use on the regular. The top 3 resources include: 
+                            <ul>
+                                <li>Degree Audit</li>
+                                <li>STARS</li>
+                                <li>Class Schedule</li>
+                            </ul>
+                            Then, we created user journey maps to discover how NTU students access and engage their academic resources.
+                            We also gathered factors of the interface that users value, satisfactions levels, and their pain points using the current NTU portal.
+                        </p> 
+                        <button class="btn3"><a
+                            href="https://docs.google.com/presentation/d/1mugF9Ym-6JrFcamcR4VabUjakRYz1rWV64dTIb_A-d4/edit?usp=sharing"
+                            target="_blank">View More&nbsp;&nbsp;<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a></button>                   
                     </div>
                 </div>
             </div>
@@ -176,7 +180,7 @@
             <div id="copywriting">
                 <div class="row">
                     <div class="col-md-8 my-auto our-team-text" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500" data-aos-once="true">
-                        <h1>Designing Process</h1>
+                        <h1>Ideation & Prototyping</h1>
                         <p>
                             From the user research results, we identified 3 main problems with the existing NTU portal which are:
                             <ul>
@@ -184,10 +188,13 @@
                                 <li>Multiple unintuitive logins required</li>
                                 <li>Disorganised links and repeated platforms</li>
                             </ul>
-                            <br>
-                            From there, we came out with 3 low-fidelity prototypes on Figma tackling user problems faced by our target audience. We also redesigned the sitemap to be more streamlined. To instil familiarity within the site, we used NTU’s primary and secondary colour scheme and typeface in our prototypes.
+                            From there, we came out with 3 low-fidelity prototypes on Figma tackling these pain points. Solutions include removing unnecessary information and customizability. 
+                            We also streamlined the sitemap to make the site more intuitive. To instil familiarity within the site for existing users, we utilised NTU’s primary and secondary colour scheme and typeface in our prototypes.
                         </p>
-                        <a href="https://docs.google.com/presentation/d/1ftL78dEz-5HvBKTab09R0e12hPaSgkONaCqD_MT9FTE/edit?usp=sharing" target="_blank"><button type="submit" class="btn btn2">View PowerPoint &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></i></button></a>
+                        <button class="btn3"><a
+                            href="https://docs.google.com/presentation/d/1LtVsVOO5HhYEIFSV964WRN6R4_J1gkShgVKkjKC338U/edit?usp=sharing"
+                            target="_blank">View More&nbsp;&nbsp;<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a></button>  
                     </div>
                     <div class="col-md-4" style="text-align: right;" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500" data-aos-once="true">
                         <img src="images/ntu/designing-process.png" class="img-fluid" alt="Copywriting" title="Copywriting"/>
@@ -203,19 +210,35 @@
                     </div>
                     <div class="col-md-8 my-auto our-team-text" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1500" data-aos-once="true">
                         <h1>Repeat the Process</h1>
-                        <p>After creating out mock-ups, we gathered continuous feedback from our users to find out if our initial prototypes did solve their pain points and gathered areas of improvement.
+                        <p>After creating our mock-ups, we gathered continuous feedback from our users to find out if our initial prototypes did solve their pain points and gathered areas of improvement. Some layouts were changed and new features were included to ensure that our goals of meeting users' needs were met.
                             <br><br>
                             Through this iterative fine-tuning process, our team successfully created our final prototype to enhance the current NTU portal for a better user experience for our target audience.</p>
-                       <br>
-                            <p><i class="fa-brands fa-figma"></i><a href="https://www.figma.com/file/bhcdkeaMeuheBqSUch39cf/DV2008-Assignment-3?node-id=0%3A1&t=vvdKmjUMTL3g4v7Q-1" target="_blank" style="text-decoration: none; color: black; cursor: pointer;">&nbsp;&nbsp;Figma</a></p>
-                        <p><i class="fa-solid fa-file-powerpoint"></i></i><a href="https://docs.google.com/presentation/d/1mugF9Ym-6JrFcamcR4VabUjakRYz1rWV64dTIb_A-d4/edit?usp=sharing" target="_blank" style="text-decoration: none; color: black; cursor: pointer;">&nbsp;&nbsp;Presentation 1</a></p>
-                        <p><i class="fa-solid fa-file-powerpoint"></i><a href="https://docs.google.com/presentation/d/1ftL78dEz-5HvBKTab09R0e12hPaSgkONaCqD_MT9FTE/edit?usp=sharing" target="_blank" style="text-decoration: none; color: black; cursor: pointer;">&nbsp;&nbsp;Presentation 2</a></p>
-                        <p><i class="fa-solid fa-file-powerpoint"></i><a href="https://docs.google.com/presentation/d/1LtVsVOO5HhYEIFSV964WRN6R4_J1gkShgVKkjKC338U/edit?usp=sharing" target="_blank" style="text-decoration: none; color: black; cursor: pointer;">&nbsp;&nbsp;Presentation 3</a></p>
+                            <button class="btn3"><a
+                                href="https://docs.google.com/presentation/d/1ftL78dEz-5HvBKTab09R0e12hPaSgkONaCqD_MT9FTE/edit?usp=sharing"
+                                target="_blank">View More&nbsp;&nbsp;<i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></button>  
                     </div>
                 </div>
             </div>
 
-            <div id="next-project" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500">
+            <div id="final">
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-delay="900" data-aos-duration="900"
+                        data-aos-once="true">
+                        <h1>Final Product</h1>
+                        <br>
+                        <p><i class="fa-brands fa-figma"></i><a href="https://www.figma.com/file/bhcdkeaMeuheBqSUch39cf/DV2008-Assignment-3?node-id=0%3A1&t=vvdKmjUMTL3g4v7Q-1" target="_blank" style="text-decoration: none; color: black; cursor: pointer;">&nbsp;&nbsp;Final Prototype</a></p>
+                        <p><i class="fa-solid fa-file-powerpoint"></i></i><a href="https://docs.google.com/presentation/d/1mugF9Ym-6JrFcamcR4VabUjakRYz1rWV64dTIb_A-d4/edit?usp=sharing" target="_blank" style="text-decoration: none; color: black; cursor: pointer;">&nbsp;&nbsp;User Research</a></p>
+                        <p><i class="fa-solid fa-file-powerpoint"></i><a href="https://docs.google.com/presentation/d/1ftL78dEz-5HvBKTab09R0e12hPaSgkONaCqD_MT9FTE/edit?usp=sharing" target="_blank" style="text-decoration: none; color: black; cursor: pointer;">&nbsp;&nbsp;Ideation & Prototyping</a></p>
+                        <p><i class="fa-solid fa-file-powerpoint"></i><a href="https://docs.google.com/presentation/d/1LtVsVOO5HhYEIFSV964WRN6R4_J1gkShgVKkjKC338U/edit?usp=sharing" target="_blank" style="text-decoration: none; color: black; cursor: pointer;">&nbsp;&nbsp;Testing & Refinement</a></p>
+                        <br>
+                        <h3>Team Members:</h3>
+                        <p>Chua Jing Yi, Lee Si Ning, Kuah Bao Li, Jeremy Chua, Jenson Gabriel Tan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="next-project" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
                 <a href="shopee.html" style="text-decoration: none; color:black;">
                     <p>NEXT PROJECT <i class="fa-solid fa-chevron-right"></i></p>
                     <h1>Shopee Design Challenge</h1>
